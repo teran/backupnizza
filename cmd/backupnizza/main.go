@@ -29,6 +29,13 @@ import (
 	"github.com/teran/secretbox/service"
 )
 
+var (
+	appVersion      = "n/a (dev build)"
+	buildTimestamp  = "n/a (dev build)"
+	commitTimestamp = "n/a (dev build)"
+	gitCommit       = "n/a (dev build)"
+)
+
 type spec struct {
 	Config string `arg:"-c,env:CONFIG" default:"~/.config/backup/config.yaml"`
 }
@@ -53,6 +60,13 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+
+	log.WithFields(log.Fields{
+		"app_version":     appVersion,
+		"build_timestamp": buildTimestamp,
+		"commitTimestamp": commitTimestamp,
+		"gitCommit":       gitCommit,
+	}).Info("starting application")
 
 	if err := logger.SetupFromConfig(logCfg); err != nil {
 		panic(err)
