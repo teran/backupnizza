@@ -1,0 +1,58 @@
+{
+  "common": {
+    "pack_size": 128,
+    "cache_dir": "/Volumes/SSD/Temp/Cache/restic",
+    "tmp_dir": "/Volumes/SSD/Temp/restic"
+  },
+  "log": {
+    "level": "TRACE",
+    "format": "text"
+  },
+  "secretbox": {
+    "enable_socket": true,
+    "socket": "/var/run/backup_secretbox.sock",
+    "cli_path": "/usr/local/bin/secretbox-cli",
+    "max_token_ttl": 15000000000,
+    "tokens_gc_schedule": "* * * * *",
+    "secrets": [
+      {
+        "name": "test secret",
+        "source": "onepassword",
+        "options": {
+          "label": "restic:Vault"
+        }
+      }
+    ]
+  },
+  "tasks": [
+    {
+      "name": "task1",
+      "kind": "command",
+      "schedule": "*/1 */2 */3 */4 */5",
+      "options": {
+        "environment": [
+          {
+            "name": "RESTIC_PACK_SIZE",
+            "value": "128"
+          },
+          {
+            "name": "RESTIC_REPOSITORY",
+            "value": "/Volumes/Vault/Backup"
+          },
+          {
+            "name": "RESTIC_PASSWORD",
+            "value_from": "secretbox",
+            "options": {
+              "name": "vault"
+            }
+          }
+        ],
+        "arguments": [
+          "backup",
+          "~/Documents"
+        ],
+        "binary": "/usr/local/bin/restic"
+      }
+    }
+  ]
+}

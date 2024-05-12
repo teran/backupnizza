@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "github.com/teran/backupnizza/tasker/presenter/grpc/proto";
+
+service TaskerService {
+  rpc RunTask(RunTaskRequest) returns (RunTaskResponse);
+}
+
+message RunTaskRequest {
+  string name = 1;
+}
+
+message RunTaskResponse {}

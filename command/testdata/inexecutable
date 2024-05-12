@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+echo "Should never be executed beacause of lack of x bit in mode"
