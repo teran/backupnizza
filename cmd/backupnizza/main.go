@@ -61,16 +61,16 @@ func main() {
 		panic(err)
 	}
 
+	if err := logger.SetupFromConfig(logCfg); err != nil {
+		panic(err)
+	}
+
 	log.WithFields(log.Fields{
 		"app_version":     appVersion,
 		"build_timestamp": buildTimestamp,
 		"commitTimestamp": commitTimestamp,
 		"gitCommit":       gitCommit,
 	}).Info("starting application")
-
-	if err := logger.SetupFromConfig(logCfg); err != nil {
-		panic(err)
-	}
 
 	secretsRepo := secretsRepository.New()
 	tokensRepo := tokensRepository.New()
