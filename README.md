@@ -1,6 +1,6 @@
 # backupnizza
 
-![Test & Build status](https://github.com/teran/backupnizza/actions/workflows/go.yml/badge.svg)
+![Test & Build status](https://github.com/teran/backupnizza/actions/workflows/verify.yml/badge.svg)
 [![Go Report Card](https://goreportcard.com/badge/github.com/teran/backupnizza)](https://goreportcard.com/report/github.com/teran/backupnizza)
 [![Go Reference](https://pkg.go.dev/badge/github.com/teran/backupnizza.svg)](https://pkg.go.dev/github.com/teran/backupnizza)
 
