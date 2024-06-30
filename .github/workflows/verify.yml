@@ -8,8 +8,9 @@ on:
   pull_request:
     types:
       - opened
-      - synchronize
       - reopened
+      - edited
+      - synchronize
 
 jobs:
   markdownlint:
@@ -23,18 +24,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22.x'
+      - name: Install dependencies
+        run: go mod download
+      - name: Test with the Go CLI
+        run: go test ./...
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Go
         uses: actions/setup-go@v4
         with:
           go-version: '1.22.x'
       - name: Install dependencies
         run: go mod download
-      - name: Install protoc-gen-go
-        run: go install github.com/golang/protobuf/protoc-gen-go@latest
-      - name: Install protoc-gen-go-grpc
-        run: go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
-      - name: Go generate
-        run: go generate ./...
-      - name: Test with the Go CLI
-        run: go test ./...
-      - name: Build
-        run: go build -v ./...
+      - name: Build project against .goreleaser.yaml
+        uses: goreleaser/goreleaser-action@v6
+        with:
+          distribution: goreleaser
+          version: '~> v2'
+          args: build --snapshot
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
