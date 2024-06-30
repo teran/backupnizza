@@ -2,7 +2,7 @@ package config
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"path"
 	"strings"
 
@@ -26,7 +26,7 @@ func NewFromFile(filename string) (*Config, error) {
 }
 
 func newFromYAMLFile(filename string) (*Config, error) {
-	fileData, err := ioutil.ReadFile(filename)
+	fileData, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, errors.Wrap(err, "error opening configuration file")
 	}

@@ -2,7 +2,7 @@ package command
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"os"
 	"testing"
 
 	log "github.com/sirupsen/logrus"
@@ -16,7 +16,7 @@ func init() {
 func TestGroupOptionsUnmarshal(t *testing.T) {
 	r := require.New(t)
 
-	data, err := ioutil.ReadFile("testdata/config/group_options.json")
+	data, err := os.ReadFile("testdata/config/group_options.json")
 	r.NoError(err)
 
 	cfg := GroupOptions{}
