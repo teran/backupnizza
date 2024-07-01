@@ -13,7 +13,7 @@ require (
 	github.com/teran/go-onepassword-cli v0.0.1
 	github.com/teran/go-random v0.0.1
 	github.com/teran/go-time v0.0.1
-	github.com/teran/secretbox v0.0.1
+	github.com/teran/secretbox v0.0.2
 	golang.org/x/sync v0.7.0
 	google.golang.org/grpc v1.64.0
 	gopkg.in/yaml.v3 v3.0.1
@@ -27,9 +27,9 @@ require (
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
-	golang.org/x/net v0.23.0 // indirect
-	golang.org/x/sys v0.18.0 // indirect
-	golang.org/x/text v0.14.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20240318140521-94a12d6c2237 // indirect
+	golang.org/x/net v0.25.0 // indirect
+	golang.org/x/sys v0.20.0 // indirect
+	golang.org/x/text v0.15.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20240509183442-62759503f434 // indirect
 	google.golang.org/protobuf v1.34.1 // indirect
 )
