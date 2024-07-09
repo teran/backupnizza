@@ -12,7 +12,7 @@ require (
 	github.com/teran/go-grpctest v0.0.3
 	github.com/teran/go-onepassword-cli v0.0.1
 	github.com/teran/go-random v0.0.1
-	github.com/teran/go-time v0.0.1
+	github.com/teran/go-time v0.0.2
 	github.com/teran/secretbox v0.0.2
 	golang.org/x/sync v0.7.0
 	google.golang.org/grpc v1.65.0
