@@ -59,8 +59,8 @@ github.com/teran/go-random v0.0.1 h1:WQ3cF7UUQb/Q0oGAKcYeLeUIcMzD4vSs18oU1pkU/Mo
 github.com/teran/go-random v0.0.1/go.mod h1:t6Ns4GZsg/L9whg4u4EVXAj9k2lJiRHmJ7p1intLO0g=
 github.com/teran/go-time v0.0.2 h1:9g/+j3gAeMwtFETEh8ggWm1GFj8EFWwL/UqoM3ZYuiA=
 github.com/teran/go-time v0.0.2/go.mod h1:fsTuk1e6n6eukMXxmyqY7kG6n5PJUMjUjHA4Ved/enE=
-github.com/teran/secretbox v0.0.2 h1:eJmQAj42eWVyJ/t8zytr8TjCoww5hrwwwicXai7tiTQ=
-github.com/teran/secretbox v0.0.2/go.mod h1:UlDGfF0QbE6KrxXjnYxmQX25KzeUplM+e8Yqef5AAnM=
+github.com/teran/secretbox v1.0.0 h1:BQrieH5QkavYAi6dDgriHeDwnfXf0IBDnY7JbNmC14o=
+github.com/teran/secretbox v1.0.0/go.mod h1:thfqIoHPCt0PYW9Ml4/0Y4dOJ15oGhmE5uhnjZD6eIU=
 go.uber.org/atomic v1.9.0 h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE=
 go.uber.org/atomic v1.9.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
 golang.org/x/net v0.28.0 h1:a9JDOJc5GMUJ0+UDqmLT86WiEy7iWyIhz8gz8E4e5hE=
