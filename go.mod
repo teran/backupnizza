@@ -15,7 +15,7 @@ require (
 	github.com/teran/go-time v0.0.2
 	github.com/teran/secretbox v1.0.0
 	golang.org/x/sync v0.8.0
-	google.golang.org/grpc v1.67.0
+	google.golang.org/grpc v1.67.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 
