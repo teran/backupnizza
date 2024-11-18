@@ -61,8 +61,8 @@ github.com/teran/go-random v0.0.1 h1:WQ3cF7UUQb/Q0oGAKcYeLeUIcMzD4vSs18oU1pkU/Mo
 github.com/teran/go-random v0.0.1/go.mod h1:t6Ns4GZsg/L9whg4u4EVXAj9k2lJiRHmJ7p1intLO0g=
 github.com/teran/go-time v0.0.2 h1:9g/+j3gAeMwtFETEh8ggWm1GFj8EFWwL/UqoM3ZYuiA=
 github.com/teran/go-time v0.0.2/go.mod h1:fsTuk1e6n6eukMXxmyqY7kG6n5PJUMjUjHA4Ved/enE=
-github.com/teran/secretbox v1.0.0 h1:BQrieH5QkavYAi6dDgriHeDwnfXf0IBDnY7JbNmC14o=
-github.com/teran/secretbox v1.0.0/go.mod h1:thfqIoHPCt0PYW9Ml4/0Y4dOJ15oGhmE5uhnjZD6eIU=
+github.com/teran/secretbox v1.0.1 h1:Qbo5vuSaEC1rMtgumLfE+QJMxXRYCvWUz8JV2IhTWn4=
+github.com/teran/secretbox v1.0.1/go.mod h1:vG80f1ztv9HXvqm1IhM1QmOMVKfNd1GQSMRCVPhBVyU=
 go.uber.org/atomic v1.9.0 h1:ECmE8Bn/WFTYwEW/bpKD3M8VtR/zQVbavAoalC1PYyE=
 go.uber.org/atomic v1.9.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
 golang.org/x/net v0.29.0 h1:5ORfpBpCs4HzDYoodCDBbwHzdR5UrLBZ3sOnUJmFoHo=
@@ -78,8 +78,8 @@ google.golang.org/genproto/googleapis/rpc v0.0.0-20240903143218-8af14fe29dc1 h1:
 google.golang.org/genproto/googleapis/rpc v0.0.0-20240903143218-8af14fe29dc1/go.mod h1:UqMtugtsSgubUsoxbuAoiCXvqvErP7Gf0so0mK9tHxU=
 google.golang.org/grpc v1.68.0 h1:aHQeeJbo8zAkAa3pRzrVjZlbz6uSfeOXlJNQM0RAbz0=
 google.golang.org/grpc v1.68.0/go.mod h1:fmSPC5AsjSBCK54MyHRx48kpOti1/jRfOlwEWywNjWA=
-google.golang.org/protobuf v1.34.2 h1:6xV6lTsCfpGD21XK49h7MhtcApnLqkfYgPcdHftf6hg=
-google.golang.org/protobuf v1.34.2/go.mod h1:qYOHts0dSfpeUzUFpOMr/WGzszTmLH+DiWniOlNbLDw=
+google.golang.org/protobuf v1.35.2 h1:8Ar7bF+apOIoThw1EdZl0p1oWvMqTHmpA2fRTyZO8io=
+google.golang.org/protobuf v1.35.2/go.mod h1:9fA7Ob0pmnwhb644+1+CVWFRbNajQ6iRojtC/QF5bRE=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/check.v1 v1.0.0-20201130134442-10cb98267c6c h1:Hei/4ADfdWqJk1ZMxUNpqntNwaWcugrBjAiHlqqRiVk=
