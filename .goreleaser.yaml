@@ -1,4 +1,5 @@
 ---
+version: 2
 builds:
   - id: backupnizza
     main: ./cmd/backupnizza
@@ -18,7 +19,8 @@ builds:
     goarm: ["7"]
     mod_timestamp: "{{ .CommitTimestamp }}"
 archives:
-  - format: binary
+  - formats:
+      - binary
 checksum:
   name_template: "checksums.txt"
   algorithm: sha256
