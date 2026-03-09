@@ -1,8 +1,6 @@
 module github.com/teran/backupnizza
 
-go 1.24.0
-
-toolchain go1.24.2
+go 1.25.0
 
 require (
 	github.com/alexflint/go-arg v1.6.0
@@ -16,7 +14,7 @@ require (
 	github.com/teran/go-random v0.0.1
 	github.com/teran/go-time v0.0.2
 	github.com/teran/secretbox v1.0.4
-	golang.org/x/sync v0.19.0
+	golang.org/x/sync v0.20.0
 	google.golang.org/grpc v1.75.1
 	gopkg.in/yaml.v3 v3.0.1
 )
