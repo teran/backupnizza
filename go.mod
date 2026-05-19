@@ -1,8 +1,6 @@
 module github.com/teran/backupnizza
 
-go 1.24.0
-
-toolchain go1.24.2
+go 1.25.0
 
 require (
 	github.com/alexflint/go-arg v1.6.0
@@ -16,8 +14,8 @@ require (
 	github.com/teran/go-random v0.0.1
 	github.com/teran/go-time v0.0.2
 	github.com/teran/secretbox v1.0.4
-	golang.org/x/sync v0.19.0
-	google.golang.org/grpc v1.79.3
+	golang.org/x/sync v0.20.0
+	google.golang.org/grpc v1.81.1
 	gopkg.in/yaml.v3 v3.0.1
 )
 
@@ -29,9 +27,9 @@ require (
 	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
-	golang.org/x/net v0.48.0 // indirect
-	golang.org/x/sys v0.39.0 // indirect
-	golang.org/x/text v0.32.0 // indirect
-	google.golang.org/genproto/googleapis/rpc v0.0.0-20251202230838-ff82c1b0f217 // indirect
-	google.golang.org/protobuf v1.36.10 // indirect
+	golang.org/x/net v0.51.0 // indirect
+	golang.org/x/sys v0.42.0 // indirect
+	golang.org/x/text v0.34.0 // indirect
+	google.golang.org/genproto/googleapis/rpc v0.0.0-20260226221140-a57be14db171 // indirect
+	google.golang.org/protobuf v1.36.11 // indirect
 )
